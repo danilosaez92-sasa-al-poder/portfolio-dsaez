@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Daniel Sáez Martínez</title>
-<meta name="description" content="Portfolio de Daniel Sáez, Product Designer. Diseño productos que simplifican sistemas complejos: Sportsbook, herramientas internas y operaciones en iGaming.">
+<meta name="description" content="Portfolio de Daniel Sáez, Product Designer. Diseño productos que simplifican sistemas complejos: Sportsbook, onboarding y CRO, herramientas internas y operaciones en iGaming.">
 <meta name="author" content="Daniel Sáez Martínez">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
@@ -31,7 +31,7 @@
   color-scheme: light;
   --bg:#ffffff;
   --ink:#000000;
-  --muted:#aeaeae;
+  --muted:#6e6e6e;          /* gris de texto secundario: 5:1 sobre blanco (WCAG AA) */
   --line:#dddddd;
   --surface:#f4f4f2;
   --accent:#e2f505;          /* botón ¡Hablemos! */
@@ -215,7 +215,7 @@ h1,h2,h3{text-wrap:balance}
 .story-block{display:grid;gap:40px}
 .story-text{max-width:690px;display:grid;gap:16px}
 .story-text strong{font-weight:700}
-.caption{font-size:14px;font-weight:500;line-height:1.4;color:#8a8a8a;margin-top:12px}
+.caption{font-size:14px;font-weight:500;line-height:1.4;color:#6b6b6b;margin-top:12px}
 .stage{position:relative;border-radius:var(--r-card);overflow:hidden;background:linear-gradient(135deg,#ff6a3d 0%,#ff9a70 38%,#f9d9c7 78%,#f6ebe4 100%);display:flex;align-items:center;justify-content:center;gap:4%;padding:56px 4%}
 .stage.soft{background:var(--surface)}
 .phone{width:22%;max-width:260px;border-radius:30px;border:6px solid #0d0d0d;background:#0d0d0d;box-shadow:0 30px 60px -20px rgba(80,20,0,.45),0 12px 24px -12px rgba(0,0,0,.35);overflow:hidden;flex:none}
@@ -242,7 +242,7 @@ h1,h2,h3{text-wrap:balance}
 .deadline .bar{display:grid;grid-template-columns:repeat(6,1fr);gap:4px}
 .deadline .bar span{height:10px;border-radius:10px;background:#ffd9c8}
 .deadline .bar span:last-child{background:#ff6a3d}
-.deadline .ticks{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;font-size:14px;font-weight:500;color:#8a8a8a}
+.deadline .ticks{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;font-size:14px;font-weight:500;color:#6b6b6b}
 .deadline .ticks b{color:var(--ink);font-weight:500}
 
 /* Cifras */
@@ -262,7 +262,7 @@ h1,h2,h3{text-wrap:balance}
 .features{list-style:none;margin:0;padding:0;display:grid}
 .features li{display:grid;grid-template-columns:40px 1fr;gap:12px;padding:18px 0;border-top:1px solid var(--line);font-size:20px;line-height:1.35}
 .features li:last-child{border-bottom:1px solid var(--line)}
-.features .i{font-size:14px;font-weight:500;color:#8a8a8a;padding-top:4px}
+.features .i{font-size:14px;font-weight:500;color:#6b6b6b;padding-top:4px}
 @media (max-width:809px){.feature-row{grid-template-columns:1fr;gap:32px}.features li{font-size:17px}}
 
 /* Pantallas clave */
@@ -316,13 +316,13 @@ h1,h2,h3{text-wrap:balance}
 .compare-col .phone img{border-radius:19px}
 .principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .principle{border-top:1px solid var(--line);padding-top:20px;display:grid;gap:8px}
-.principle .i{font-size:14px;font-weight:500;color:#8a8a8a}
+.principle .i{font-size:14px;font-weight:500;color:#6b6b6b}
 .principle .t{font-size:24px;line-height:1.25}
 .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
 .steps figure{margin:0;display:grid;gap:12px}
 .steps .phone{width:100%;max-width:none;box-shadow:0 20px 40px -24px rgba(0,0,0,.4)}
 .steps figcaption{font-size:14px;font-weight:500}
-.steps figcaption span{display:block;color:#8a8a8a}
+.steps figcaption span{display:block;color:#6b6b6b}
 @media (max-width:809px){
   .compare{grid-template-columns:1fr}.compare-col{padding:20px}
   .principles{grid-template-columns:1fr}.principle .t{font-size:20px}
@@ -360,7 +360,7 @@ h1,h2,h3{text-wrap:balance}
 .flow-row.new .tag{background:var(--accent);color:#000}
 .chain{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .node{background:#fff;border-radius:12px;padding:14px 18px;font-size:18px;font-weight:500;box-shadow:0 1px 0 rgba(0,0,0,.05)}
-.node small{display:block;font-size:13px;font-weight:500;color:#8a8a8a}
+.node small{display:block;font-size:13px;font-weight:500;color:#6b6b6b}
 .arrow{color:#9a9a9a;font-size:22px}
 .loop{font-size:15px;font-weight:500;color:#6f6f6f;border-top:1.5px dashed #bdbab3;padding-top:12px}
 .flow-row.new .loop{border-top-color:#e8b89c;color:#9a4a1c}
@@ -382,7 +382,7 @@ h1,h2,h3{text-wrap:balance}
 .zoom-card .z{border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line),0 24px 40px -28px rgba(0,0,0,.35)}
 .zoom-card .z img{display:block;width:100%;height:auto}
 .zoom-card figcaption{font-size:15px;font-weight:500;line-height:1.4}
-.zoom-card figcaption span{display:block;color:#8a8a8a;font-weight:500}
+.zoom-card figcaption span{display:block;color:#6b6b6b;font-weight:500}
 
 /* Antes / después en barras */
 .bars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
@@ -414,7 +414,7 @@ h1,h2,h3{text-wrap:balance}
 .loupe-cap{font-size:15px;font-weight:500;line-height:1.4;max-width:560px}
 .loupe.flip .loupe-cap{margin-left:auto;text-align:right}
 .loupe-cap b{display:block;font-weight:500}
-.loupe-cap span{color:#8a8a8a}
+.loupe-cap span{color:#6b6b6b}
 @media (max-width:809px){
   .loupe-screen{width:100%}
   .lens{position:static;width:100%}
@@ -432,6 +432,79 @@ h1,h2,h3{text-wrap:balance}
 
 .view{animation:fade .5s ease both}
 @keyframes fade{from{opacity:.001;transform:translateY(8px)}}
+
+/* ---------- ONBOARDING ---------- */
+/* Fondo menta con líneas diagonales suaves: progreso / escalera hacia "verificado" */
+.art-ob,.stage.mint{background-color:#e3f1ea;background-image:radial-gradient(80% 70% at 100% 0%,rgba(255,255,255,.75),transparent 60%),repeating-linear-gradient(135deg,rgba(20,110,70,.06) 0 1px,transparent 1px 26px)}
+.art-ob{position:absolute;inset:0;overflow:hidden}
+.stairs{position:absolute;inset:0}
+.stairs .phone{position:absolute;width:21%;max-width:none;border-width:5px;border-radius:24px;box-shadow:0 30px 50px -22px rgba(10,70,45,.45),0 10px 20px -10px rgba(0,0,0,.25);transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.stairs .phone img{position:static;width:100%;height:auto;border-radius:19px;transform:none!important}
+.stairs .s0{left:6%;top:48%}
+.stairs .s1{left:29%;top:36%}
+.stairs .s2{left:52%;top:24%}
+.stairs .s3{left:75%;top:12%}
+.card:hover .stairs .phone,.ob-stage:hover .stairs .phone{transform:translateY(-5%)}
+.card:hover .stairs .s0,.ob-stage:hover .stairs .s0{transform:translateY(-2%)}
+.card:hover .stairs .s3,.ob-stage:hover .stairs .s3{transform:translateY(-8%)}
+.verified-pill{position:absolute;right:5%;top:5%;z-index:3;font-size:14px;font-weight:600;padding:8px 14px;border-radius:100px;background:#0f8a55;color:#fff;box-shadow:0 10px 24px -10px rgba(10,90,55,.6);white-space:nowrap}
+.ob-stage{display:block;aspect-ratio:1212/620;padding:0}
+.ob-stage .stairs .phone{width:17%}
+.ob-stage .stairs .s0{left:12%}.ob-stage .stairs .s1{left:32%}.ob-stage .stairs .s2{left:52%}.ob-stage .stairs .s3{left:72%}
+.ob-stage .verified-pill{font-size:16px;padding:10px 18px;right:6%;top:6%}
+@media (max-width:809px){.stairs .phone{border-width:3px;border-radius:14px}.stairs .phone img{border-radius:11px}.verified-pill,.ob-stage .verified-pill{font-size:11px;padding:5px 9px;left:4%;right:auto;top:6%}}
+@media (prefers-reduced-motion:reduce){.stairs .phone{transition:none}}
+.node-ok{background:#0f8a55;color:#fff}.node-ok small{color:rgba(255,255,255,.8)}
+
+/* Subapartados de la solución */
+.sub{display:grid;gap:28px;padding-top:32px;border-top:1px solid var(--line)}
+.sub-h{font-size:24px;line-height:1.25;font-weight:500;display:flex;gap:12px;align-items:baseline}
+.sub-h .i{font-size:14px;color:#6b6b6b;font-variant-numeric:tabular-nums}
+.shots{display:grid;gap:20px;align-items:start;background:var(--surface);border-radius:var(--r-card);padding:40px 6%}
+.shots.n2{grid-template-columns:repeat(2,minmax(0,240px));justify-content:center;gap:48px}
+.shots.n4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.shots figure{margin:0;display:grid;gap:12px}
+.shots .phone{width:100%;max-width:none;box-shadow:0 20px 40px -24px rgba(0,0,0,.4)}
+.shots figcaption{font-size:14px;font-weight:500;color:#555}
+@media (max-width:809px){.sub-h{font-size:20px}.shots{padding:24px 5%}.shots.n2{gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}.shots.n4{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+
+/* Tests A/B */
+.tests{display:grid;gap:24px}
+.test{border:1px solid var(--line);border-radius:var(--r-card);padding:32px;display:grid;gap:28px}
+.test-head{display:grid;gap:6px}
+.test-n{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#0f8a55}
+.test-step{font-size:14px;font-weight:500;color:#6b6b6b}
+.test-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:40px;align-items:start}
+.test-meta{margin:0;display:grid;gap:18px}
+.test-meta dt{font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#6b6b6b;margin-bottom:4px}
+.test-meta dd{margin:0;font-size:17px;line-height:1.5}
+.ab{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;background:var(--surface);border-radius:16px;padding:20px}
+.ab figure{margin:0;display:grid;gap:10px;align-content:start}
+.ab figcaption{font-size:14px;font-weight:500;display:flex;gap:6px;align-items:center;flex-wrap:wrap;min-height:26px}
+.ab figcaption b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#1c1c1c;color:#fff;font-size:12px}
+.ab .phone{width:100%;max-width:none;border-width:4px;border-radius:20px;box-shadow:0 16px 30px -20px rgba(0,0,0,.4)}
+.ab .phone img{border-radius:16px}
+.ab figure.win .phone{border-color:#0f8a55;box-shadow:0 0 0 3px rgba(15,138,85,.25),0 16px 30px -20px rgba(0,0,0,.4)}
+.ab figure.win figcaption b{background:#0f8a55}
+.win-chip{font-size:12px;font-weight:600;padding:3px 8px;border-radius:100px;background:#d6f0e3;color:#0b6b42}
+.test-change{margin:0;font-size:16px;font-weight:500;color:#1c1c1c;background:#eef7f2;border-left:3px solid #0f8a55;padding:12px 16px;border-radius:0 10px 10px 0}
+.flow-row.new.ob{background:#e3f1ea}
+@media (max-width:809px){.test{padding:20px;gap:20px}.test-body{grid-template-columns:1fr;gap:24px}.test-meta dd{font-size:16px}.ab{padding:14px;gap:12px}}
+
+/* Datos pendientes (marcadores visibles mientras faltan cifras) */
+.story .ph{display:inline;background:#fff3a6;color:#6a5600;padding:1px 6px;border-radius:4px;font-size:.9em;font-weight:500}
+
+/* Botón descargar CV */
+.section-title{flex-wrap:wrap}
+.cv-btn{margin-left:auto;align-self:center;display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 20px;border-radius:1000px;border:1px solid var(--ink);font-size:16px;font-weight:500;transition:background .25s,color .25s}
+.cv-btn svg{width:18px;height:18px;transition:transform .25s}
+.cv-btn .cv-meta{font-size:12px;font-weight:500;color:var(--muted);transition:color .25s}
+.cv-btn:hover{background:var(--ink);color:#fff}.cv-btn:hover .cv-meta{color:#cfcfcf}
+.cv-btn:hover svg{transform:translateY(2px)}
+@media (max-width:809px){.cv-btn{margin-left:0;flex-basis:100%;justify-content:center;margin-top:8px}}
+.foot-links{display:flex;gap:24px;margin-top:24px}
+.foot-links a{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.foot-links a:hover{text-decoration-thickness:2px}
 </style>
 </head>
 <body>
@@ -473,6 +546,7 @@ h1,h2,h3{text-wrap:balance}
       <span class="h3"><a href="mailto:daniel.saez92@yahoo.com">daniel.saez92@yahoo.com</a><button class="copy-btn" data-copy="daniel.saez92@yahoo.com" data-i18n="copy">Copiar</button></span>
       <span class="h3"><a href="tel:+34617798125">+34 617798125</a><button class="copy-btn" data-copy="+34 617798125" data-i18n="copy">Copiar</button></span>
     </div>
+    <p class="foot-links small"><a href="assets/cv/Daniel-Saez-CV.pdf" download="Daniel-Saez-CV.pdf" data-i18n="cv_dl">Descargar CV</a><a href="https://www.linkedin.com/in/dasama/" target="_blank" rel="noopener">LinkedIn ↗</a></p>
     <div class="credits small">
       <p><span class="m">Created by</span> Daniel Sáez</p>
       <p><span class="m" data-i18n="tested">Esta web ha sido testada.</span> <span data-i18n="harmed">Ningún usuario ha sufrido daños durante el testing</span></p>
@@ -525,6 +599,26 @@ const PROJECTS = [
     "Más allá del lanzamiento, el proyecto estableció una base de producto preparada para evolucionar de forma iterativa. Dos años después, la plataforma continúa creciendo sobre la arquitectura definida en este proyecto, incorporando nuevas funcionalidades y mejoras continuas. Durante este periodo se ha observado un incremento del ticket medio y el producto mantiene un volumen aproximado de <strong>60.000 € diarios</strong> en apuestas."]],
    ["Conclusiones",[
     "Este proyecto reforzó mi forma de entender el Product Design: un buen diseño no consiste únicamente en resolver problemas de interfaz, sino en tomar decisiones que equilibren negocio, tecnología y experiencia de usuario. Aprendí que construir un MVP no significa lanzar menos funcionalidades, sino identificar cuáles generan el mayor valor y diseñar una base sólida sobre la que el producto pueda evolucionar."]]
+  ]},
+ {slug:"onboarding-luckia", title:"Onboarding Luckia", tag:"CRO", card:"card-onboarding", detail:"detail-onboarding", dark:false, story:"onboarding",
+  lead:"Un nuevo onboarding preparado para convertir, verificar y evolucionar continuamente.",
+  intro:"Rediseñamos el proceso de registro de Luckia para reducir fricciones, integrar la verificación de identidad en tiempo real y crear una base preparada para experimentar y optimizar un funnel crítico para el negocio.",
+  industry:"iGaming", duration:"9 meses",
+  sections:[
+   ["El Reto",[
+    "El registro es uno de los puntos de entrada más importantes de Luckia, pero también uno de los más condicionados por la regulación. Los usuarios deben completar numerosos campos obligatorios y aportar información que después se contrasta con la <strong>DGOJ</strong> (Dirección General de Ordenación del Juego, el regulador español, que exige validar la identidad de cada usuario), generando múltiples puntos potenciales de fricción.",
+    "La incorporación de <strong>Jumio</strong> como proveedor de verificación de identidad abrió la oportunidad de replantear todo el onboarding: no solo su interfaz, sino también la forma de gestionar errores, documentación y el paso de usuario registrado a usuario verificado.",
+    "Para negocio, ese paso era especialmente relevante: un usuario verificado tenía aproximadamente un <strong>60 % más de valor</strong> que uno que únicamente había completado el registro."]],
+   ["El Rol",[
+    "Lideré el diseño del nuevo onboarding de principio a fin, trabajando junto a negocio, tecnología y los proveedores de verificación. Definí la arquitectura del flujo, los estados y escenarios de error, la integración de Jumio y la experiencia de documentación, además de liderar la definición visual del producto.",
+    "Una vez lanzado, participé en la identificación de oportunidades de CRO y en la definición de experimentos para optimizar progresivamente los distintos pasos del funnel."]],
+   ["La Solución",[]],
+   ["Los resultados",[
+    "El nuevo onboarding aumentó entre <strong>3 y 4 puntos porcentuales</strong> la conversión a usuario registrado. Aunque el incremento pueda parecer pequeño, aplicado al volumen de tráfico de Luckia supone un impacto relevante en el número de nuevos registros.",
+    "Más allá de la mejora inicial, el nuevo diseño estableció una base preparada para la experimentación continua, trabajando sobre ayudas contextuales, mensajes de error y los pasos posteriores al registro para seguir reduciendo fricciones."]],
+   ["Conclusiones",[
+    "Este proyecto me enseñó que optimizar un funnel complejo no consiste únicamente en eliminar pasos. Cuando existen restricciones regulatorias y de negocio que no podemos eliminar, el papel del diseño es hacer que esa complejidad sea comprensible y acompañar al usuario durante todo el proceso.",
+    "También supuso pasar de diseñar un onboarding cerrado a construir una experiencia preparada para evolucionar mediante datos y experimentación."]]
   ]},
  {slug:"backoffice-motor-bonos", title:"Motor de Bonos", tag:"Backoffice", card:"card-bonos", detail:"detail-bonos", dark:true, story:"bonos",
   lead:"Eliminamos la dependencia entre CRM e IT para reducir un 98 % las peticiones y acelerar el lanzamiento de promociones.",
@@ -596,6 +690,7 @@ const LOGOS = [
 /* ============================================================
    PLANTILLAS
    ============================================================ */
+const DL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg>';
 const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>';
 /* Composiciones propias para tarjetas (sustituyen a imagen/lottie) */
 const CARD_ART = {
@@ -610,6 +705,8 @@ const CARD_ART = {
       <div class="browser b-main"><div class="bar"><i></i><i></i><i></i><span>${L("Motor de Bonos","Bonus Engine")}</span></div><img src="assets/bonos/lista.webp" alt="" loading="lazy"></div>
       <div class="b-zoom"><img src="assets/bonos/zoom-validacion.webp" alt="" loading="lazy"></div>
     </div>`,
+  "card-onboarding": () => `
+    <div class="art-ob">${obStairs(OB, OB_TXT[LANG])}</div>`,
   "card-arys": () => `
     <div class="art-arys">
     <div class="fan" aria-hidden="true">
@@ -657,6 +754,25 @@ const PROJECTS_EN = {
     "Beyond the launch, the project established a product foundation ready to evolve iteratively. Two years later, the platform keeps growing on the architecture defined in this project, adding new features and continuous improvements. Over this period the average ticket has increased, and the product handles around <strong>€60,000 a day</strong> in bets."]],
    ["Conclusions",[
     "This project reinforced how I understand Product Design: good design isn't only about solving interface problems, but about making decisions that balance business, technology and user experience. I learned that building an MVP doesn't mean launching fewer features, but identifying which ones create the most value and designing a solid foundation for the product to evolve."]]
+  ]},
+ "onboarding-luckia": { title:"Luckia Onboarding", tag:"CRO", duration:"9 months",
+  lead:"A new onboarding built to convert, verify and keep evolving.",
+  intro:"We redesigned Luckia's registration to reduce friction, integrate real-time identity verification and create a foundation for experimenting on and optimising a business-critical funnel.",
+  sections:[
+   ["The Challenge",[
+    "Registration is one of Luckia's most important entry points, but also one of the most shaped by regulation. Users have to fill in many mandatory fields and provide information that is later checked against the <strong>DGOJ</strong> (Spain's gambling regulator, which requires every user's identity to be validated), creating many potential friction points.",
+    "Adding <strong>Jumio</strong> as identity verification provider opened the opportunity to rethink the whole onboarding: not just its interface, but also how errors, documents and the step from registered to verified user were handled.",
+    "For the business, that step mattered especially: a verified user was worth roughly <strong>60 % more</strong> than one who had only completed registration."]],
+   ["My Role",[
+    "I led the design of the new onboarding end to end, working with business, technology and the verification providers. I defined the flow architecture, states and error scenarios, the Jumio integration and the documents experience, and led the product's visual definition.",
+    "After launch, I helped identify CRO opportunities and define experiments to progressively optimise each step of the funnel."]],
+   ["The Solution",[]],
+   ["Results",[
+    "The new onboarding increased conversion to registered user by <strong>3 to 4 percentage points</strong>. The uplift may look small, but applied to Luckia's traffic volume it has a significant impact on the number of new sign-ups.",
+    "Beyond the initial uplift, the new design set up a foundation for continuous experimentation on contextual help, error messages and the steps after registration to keep reducing friction."]],
+   ["Conclusions",[
+    "This project taught me that optimising a complex funnel isn't only about removing steps. When there are regulatory and business constraints we can't remove, design's role is to make that complexity understandable and guide users through the whole process.",
+    "It also meant moving from designing a closed onboarding to building an experience ready to evolve through data and experimentation."]]
   ]},
  "backoffice-motor-bonos": { title:"Bonus Engine", tag:"Back-office", duration:"8 months",
   lead:"We removed the dependency between CRM and IT, cutting requests by 98 % and speeding up promotion launches.",
@@ -727,7 +843,7 @@ const UI = {
   copy:["Copiar","Copy"], copied:["Copiado","Copied"], selected:["Seleccionado","Selected"],
   tested:["Esta web ha sido testada.","This website has been tested."],
   harmed:["Ningún usuario ha sufrido daños durante el testing","No users were harmed during testing"],
-  lang_label:["Idioma","Language"]
+  lang_label:["Idioma","Language"], cv_dl:["Descargar CV (PDF)","Download CV (PDF)"]
 };
 const ui = k => L(UI[k][0], UI[k][1]);
 function applyStaticLang(){
@@ -792,7 +908,7 @@ function homeView(){
     </section>
 
     <section class="section wrap" id="experience">
-      <div class="section-title"><span class="num small">03</span><h2 class="h2">${L("Mi Experiencia","My Experience")}</h2></div>
+      <div class="section-title"><span class="num small">03</span><h2 class="h2">${L("Mi Experiencia","My Experience")}</h2><a class="cv-btn" href="assets/cv/Daniel-Saez-CV.pdf" download="Daniel-Saez-CV.pdf">${L("Descargar CV","Download CV")} <span class="cv-meta">PDF · EN</span>${DL}</a></div>
       <div class="jobs">${jobs.map(j=>`
         <article class="job">
           <div class="job-head"><h3 class="h3">${j.role}</h3><p class="body job-date">${j.date}</p></div>
@@ -1083,7 +1199,185 @@ document.addEventListener("click", e=>{
   document.querySelectorAll(".step-tabs [data-step]").forEach(x=>x.setAttribute("aria-selected", String(x===b)));
   img.src=BO+BONOS_STEPS[i][0]; img.alt=`${L("Paso","Step")} ${i+1}: ${stepLabel(i)}`;
 });
-const STORIES = { sportsbook: sportsbookStory, arys: arysStory, bonos: bonosStory };
+/* ============================================================
+   CASE STUDY ENRIQUECIDO — Onboarding
+   Imágenes en assets/onboarding/
+   Los textos de este caso (ES/EN) viven aquí mismo.
+   ============================================================ */
+const OB = "assets/onboarding/";
+const obp = (f, cls="", alt="") => phone(f, cls, alt, OB);
+const PEND = t => `<span class="ph">${t}</span>`;
+
+const OB_TXT = {
+  es: {
+    subsTitle: "La solución",
+    subs: [
+      ["Reducir la fricción del registro", "Partimos de una limitación inevitable: el registro debe recoger numerosos datos obligatorios. En lugar de intentar eliminar esa complejidad, trabajamos en cómo presentarla y acompañar al usuario durante el proceso. Rediseñamos la estructura del formulario, incorporamos ayudas contextuales y revisamos los mensajes de error para explicar qué estaba ocurriendo y cómo solucionarlo, especialmente en los datos que después valida la DGOJ.",
+        [["paso1.webp","Ayuda contextual en el propio campo"],["revisa-datos.webp","Revisión de datos cuando la DGOJ no los valida"]]],
+      ["Integrar la verificación de identidad", "Incorporamos Jumio para verificar la identidad con documento y selfie, contemplando distintos tipos de documento y situaciones de usuarios residentes en España. También definimos en qué momentos debía activarse la verificación, ya que un usuario puede tener cuenta sin haberla completado todavía.",
+        [["verif-tie.webp","Flujo adaptado a cada documento (DNI, NIE, TIE…)"],["verif-jumio.webp","Captura del documento con Jumio"]]],
+      ["Convertir la verificación en un proceso continuo", "Extendimos la experiencia más allá del registro con un área de documentación donde el usuario ve qué documentos necesita, cuáles están vigentes y cuáles requieren actualización, con acceso directo a verificar. Además, la verificación se recupera en los momentos clave: en la home y al depositar, donde el límite sin verificar se muestra claramente.",
+        [["lanzador-home.webp","Recordatorio en la home"],["lanzador-deposito.webp","Límite de depósito sin verificar"],["doc-pendiente.webp","Documentación pendiente"],["doc-ok.webp","Documentación verificada"]]]
+    ],
+    expTitle: "Experimentación (CRO)",
+    expIntro: "Una vez lanzado, el nuevo onboarding se convirtió en la base de un programa de experimentación continua junto al equipo de CRO. Estos son tres de los tests que hicimos sobre el funnel.",
+    lbl: {hyp:"Hipótesis", metric:"Métrica", result:"Resultado", decision:"Decisión", control:"Control", variant:"Variante", winner:"Ganadora", test:"Test"},
+    tests: [
+      {title:"Datos exactamente como en el DNI", step:"Paso 1 · Datos personales",
+       hyp:"Si dejamos claro desde el principio que los datos deben coincidir exactamente con el DNI/NIE, habrá menos errores de validación con la DGOJ, porque muchos usuarios escribían apellidos compuestos o el número del documento con otro formato.",
+       change:"Del texto de ayuda bajo el primer apellido a un aviso destacado al inicio del formulario.",
+       metric:"Errores de validación de la DGOJ y avance al paso 2.",
+       result:"Ganó el control: el aviso destacado no mejoró la validación frente a la ayuda contextual en el propio campo.", decision:"Mantuvimos la versión original. El aprendizaje: la ayuda funciona mejor justo donde se produce el error que como aviso general al inicio.",
+       a:"paso1.webp", b:"test1-variante.webp", win:"a"},
+      {title:"Requisitos del nombre de usuario", step:"Paso 3 · Crea tu usuario",
+       hyp:"Si los requisitos del nombre de usuario se leen como una lista rápida de escanear, los usuarios cometerán menos errores al crearlo, porque era uno de los campos con más fricción del registro.",
+       change:"De un párrafo de ayuda a una lista con cada requisito por separado.",
+       metric:"Errores en el campo de usuario y registros completados.",
+       result:"Ganó la variante: la lista de requisitos se entendía mejor que el párrafo de ayuda.", decision:"Se hizo rollout de la variante como nueva versión del paso 3.",
+       a:"paso3.webp", b:"test2-variante.webp", win:"b"},
+      {title:"Del mensaje de éxito al primer depósito", step:"Registro completado",
+       hyp:"Si el usuario puede elegir su bono y depositar en la misma pantalla de éxito, con un método de pago ya seleccionado, habrá más primeros depósitos, porque cada paso extra (ir al monedero, elegir método) era una oportunidad de perderse.",
+       change:"De un mensaje genérico de bienvenida con un botón al monedero, a una pantalla compacta con bono, método de pago y el importe listo para abrir la pasarela.",
+       metric:"Primer depósito tras el registro.",
+       result:"Fue el test más revelador: la variante con el depósito directo superó claramente al mensaje genérico.", decision:"Se implementó la variante como nueva pantalla de éxito.",
+       a:"test3-control.webp", b:"test3-variante.webp", win:"b"}
+    ],
+    kpis:[["+3–4 pp","de conversión a usuario registrado"],["~60 %","más valor de un usuario verificado frente a uno solo registrado"],["3","A/B tests sobre el funnel tras el lanzamiento"]],
+    flow:{reg:["Registro","datos obligatorios validados por la DGOJ"], ver:["Verificación","documento y selfie con Jumio"], ok:["Usuario verificado","~60 % más valor para el negocio"]},
+    baBefore:"Antes", baAfter:"Después", baCap:"Arrastra para comparar el primer paso del registro antiguo con el nuevo (escritorio).", baAria:"Comparar registro antiguo y nuevo",
+    coverAlt:["Paso 1 del registro","Datos de contacto","Crea tu usuario","Documentación verificada"], verified:"Usuario verificado"
+  },
+  en: {
+    subsTitle: "The Solution",
+    subs: [
+      ["Reducing registration friction", "We started from an unavoidable constraint: registration has to collect many mandatory fields. Instead of trying to remove that complexity, we worked on how to present it and guide users through it. We redesigned the form structure, added contextual help and rewrote error messages to explain what was happening and how to fix it, especially for the data later validated by the DGOJ.",
+        [["paso1.webp","Contextual help right in the field"],["revisa-datos.webp","Data review when the DGOJ can't validate it"]]],
+      ["Integrating identity verification", "We added Jumio to verify identity with a document and a selfie, covering different document types and situations of users living in Spain. We also defined when verification should be triggered, since a user can have an account without having completed it yet.",
+        [["verif-tie.webp","Flow adapted to each document (DNI, NIE, TIE…)"],["verif-jumio.webp","Document capture with Jumio"]]],
+      ["Making verification an ongoing process", "We extended the experience beyond registration with a documents area where users can see which documents they need, which are valid and which need updating, with direct access to verification. Verification is also brought back at key moments: on the home page and when depositing, where the unverified limit is shown clearly.",
+        [["lanzador-home.webp","Reminder on the home page"],["lanzador-deposito.webp","Deposit limit while unverified"],["doc-pendiente.webp","Pending documents"],["doc-ok.webp","Verified documents"]]]
+    ],
+    expTitle: "Experimentation (CRO)",
+    expIntro: "After launch, the new onboarding became the foundation for continuous experimentation with the CRO team. These are three of the tests we ran on the funnel.",
+    lbl: {hyp:"Hypothesis", metric:"Metric", result:"Result", decision:"Decision", control:"Control", variant:"Variant", winner:"Winner", test:"Test"},
+    tests: [
+      {title:"Data exactly as on the ID", step:"Step 1 · Personal details",
+       hyp:"If we make it clear from the start that the data must match the DNI/NIE exactly, there will be fewer validation errors with the DGOJ, because many users typed compound surnames or the document number in a different format.",
+       change:"From help text under the first surname to a prominent notice at the top of the form.",
+       metric:"DGOJ validation errors and progress to step 2.",
+       result:"Control won: the prominent notice didn't improve validation compared with the contextual help in the field itself.", decision:"We kept the original version. The learning: help works better right where the error happens than as a general notice at the top.",
+       a:"paso1.webp", b:"test1-variante.webp", win:"a"},
+      {title:"Username requirements", step:"Step 3 · Create your user",
+       hyp:"If username requirements read as a quick, scannable list, users will make fewer mistakes creating it, because it was one of the fields with the most friction in the registration.",
+       change:"From a help paragraph to a list with each requirement on its own line.",
+       metric:"Username field errors and completed registrations.",
+       result:"The variant won: the list of requirements was easier to understand than the help paragraph.", decision:"The variant was rolled out as the new version of step 3.",
+       a:"paso3.webp", b:"test2-variante.webp", win:"b"},
+      {title:"From success message to first deposit", step:"Registration completed",
+       hyp:"If users can choose their bonus and deposit on the same success screen, with a payment method already selected, there will be more first deposits, because every extra step (going to the wallet, choosing a method) was a chance to get lost.",
+       change:"From a generic welcome message with a button to the wallet, to a compact screen with bonus, payment method and amount ready to open the payment gateway.",
+       metric:"First deposit after registration.",
+       result:"The most revealing test: the direct-deposit variant clearly beat the generic message.", decision:"The variant was rolled out as the new success screen.",
+       a:"test3-control.webp", b:"test3-variante.webp", win:"b"}
+    ],
+    kpis:[["+3–4 pp","conversion to registered user"],["~60 %","more value from a verified user than a registered-only one"],["3","A/B tests on the funnel after launch"]],
+    flow:{reg:["Registration","mandatory data validated by the DGOJ"], ver:["Verification","document and selfie with Jumio"], ok:["Verified user","~60 % more value for the business"]},
+    baBefore:"Before", baAfter:"After", baCap:"Drag to compare the first step of the old registration with the new one (desktop).", baAria:"Compare old and new registration",
+    coverAlt:["Registration step 1","Contact details","Create your user","Verified documents"], verified:"Verified user"
+  }
+};
+
+const obStairs = (base, T) => `
+  <div class="stairs" aria-hidden="true">
+    ${["paso1.webp","paso2.webp","paso3.webp","doc-ok.webp"].map((f,i)=>`<div class="phone s${i}"><img src="${base}${f}" alt="" loading="lazy"></div>`).join("")}
+    <span class="verified-pill">✓ ${T.verified}</span>
+  </div>`;
+
+function onboardingStory(p){
+  const T = OB_TXT[LANG], [reto, rol, , res, concl] = p.sections;
+  const L2 = T.lbl;
+  const sub = ([h, t, shots], i) => `
+    <div class="sub">
+      <div class="story-text"><h4 class="sub-h"><span class="i">0${i+1}</span>${h}</h4><p class="body">${t}</p></div>
+      <div class="shots n${shots.length}">
+        ${shots.map(([f,c])=>`<figure>${obp(f,"",c)}<figcaption>${c}</figcaption></figure>`).join("")}
+      </div>
+    </div>`;
+  const test = (t, i) => `
+    <article class="test">
+      <header class="test-head">
+        <span class="test-n">${L2.test} 0${i+1}</span>
+        <h4 class="h4">${t.title}</h4>
+        <span class="test-step">${t.step}</span>
+      </header>
+      <p class="test-change">${t.change}</p>
+      <div class="test-body">
+        <dl class="test-meta">
+          <div><dt>${L2.hyp}</dt><dd>${t.hyp}</dd></div>
+          <div><dt>${L2.metric}</dt><dd>${t.metric}</dd></div>
+          <div><dt>${L2.result}</dt><dd>${t.result}</dd></div>
+          <div><dt>${L2.decision}</dt><dd>${t.decision}</dd></div>
+        </dl>
+        <div class="ab">
+          ${[["a",L2.control,t.a],["b",L2.variant,t.b]].map(([k,lab,f])=>`
+            <figure class="${t.win===k?"win":""}">
+              <figcaption><b>${k.toUpperCase()}</b> ${lab}${t.win===k?` <span class="win-chip">${L2.winner}</span>`:""}</figcaption>
+              ${obp(f,"",`${lab}: ${t.title}`)}
+            </figure>`).join("")}
+        </div>
+      </div>
+    </article>`;
+  return `
+  <div class="story">
+    <figure class="story-block" style="margin:0">
+      <div class="stage mint ob-stage">${obStairs(OB, T)}</div>
+    </figure>
+
+    <div class="story-block">
+      ${text(reto)}
+      <div class="flow">
+        <div class="flow-row new ob">
+          <div class="chain">
+            <span class="node">${T.flow.reg[0]}<small>${T.flow.reg[1]}</small></span><span class="arrow">→</span>
+            <span class="node">${T.flow.ver[0]}<small>${T.flow.ver[1]}</small></span><span class="arrow">→</span>
+            <span class="node node-ok">${T.flow.ok[0]}<small>${T.flow.ok[1]}</small></span>
+          </div>
+        </div>
+      </div>
+      <figure style="margin:0">
+        <div class="ba" style="--pos:50%">
+          <img class="before" src="${OB}antes-desktop.webp" alt="${T.baBefore}">
+          <div class="after-wrap"><img src="${OB}despues-desktop.webp" alt="${T.baAfter}"></div>
+          <span class="tag-l">${T.baBefore}</span><span class="tag-r">${T.baAfter}</span>
+          <input type="range" id="ba-range" min="0" max="100" value="50" aria-label="${T.baAria}">
+          <span class="handle"></span>
+        </div>
+        <figcaption class="caption">${T.baCap}</figcaption>
+      </figure>
+    </div>
+
+    <div class="story-block">${text(rol)}</div>
+
+    <div class="story-block">
+      <h3 class="h3">${T.subsTitle}</h3>
+      ${T.subs.map(sub).join("")}
+    </div>
+
+    <div class="story-block">
+      <div class="story-text"><h3 class="h3">${T.expTitle}</h3><p class="body">${T.expIntro}</p></div>
+      <div class="tests">${T.tests.map(test).join("")}</div>
+    </div>
+
+    <div class="story-block">
+      ${text(res)}
+      <div class="kpis">${T.kpis.map(([n,l])=>`<div class="kpi"><span class="n">${n}</span><span class="l">${l}</span></div>`).join("")}</div>
+    </div>
+
+    <div class="story-block">${text(concl)}</div>
+  </div>`;
+}
+
+const STORIES = { sportsbook: sportsbookStory, arys: arysStory, bonos: bonosStory, onboarding: onboardingStory };
 
 function projectView(base){
   const p = proj(base);
@@ -1092,7 +1386,7 @@ function projectView(base){
   <div class="view">
     <section class="wrap p-hero" id="top">
       <a class="back small" href="#work">← ${L("Todos los proyectos","All projects")}</a>
-      <div class="section-title" style="margin:0"><span class="num small">01</span><h2 class="h2">${p.title}</h2></div>
+      <div class="section-title" style="margin:0"><h2 class="h2">${p.title}</h2></div>
       <h3 class="lead">${p.lead}</h3>
       <p class="body intro">${p.intro}</p>
     </section>
@@ -1110,7 +1404,7 @@ function projectView(base){
       <div class="gallery">${["gallery-1","gallery-2","gallery-3","gallery-4"].map(k=>slot(k)).join("")}</div>`}
     </div>
     <section class="section wrap">
-      <div class="section-title"><span class="num small">02</span><h2 class="h2">${L("Más Proyectos","More Projects")}</h2></div>
+      <div class="section-title"><h2 class="h2">${L("Más Proyectos","More Projects")}</h2></div>
       <div class="grid-2">${others.map(cardMore).join("")}</div>
     </section>
   </div>`;
